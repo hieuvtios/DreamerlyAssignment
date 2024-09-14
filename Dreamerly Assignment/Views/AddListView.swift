@@ -138,30 +138,30 @@ struct AddListView: View {
             }
             .navigationTitle($listName)
             .navigationBarTitleDisplayMode(.inline)
-//            .toolbar {
-//                ToolbarItem(placement: .navigationBarTrailing) {
-//                    Button {
-//                        if (keyboardFocused) {
-//                            if (noteContent.isEmpty) {
-//                                dismissKeyboardAndTapGesture()
-//                                return
-//                            }
-//                            addNewNote(withNoteContent: noteContent,dueDate: dueDate,remindAt: remindAt)
-//                            // create a local nofication with remind At
-//                            noteContent = ""
-//                            dismissKeyboardAndTapGesture()
-//                        } else {
-//                            showPopUpChangeText.toggle()
-//                        }
-//                    } label: {
-//                        if (keyboardFocused) {
-//                            Text("Done")
-//                        } else {
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        if (keyboardFocused) {
+                            if (noteContent.isEmpty) {
+                                dismissKeyboardAndTapGesture()
+                                return
+                            }
+                            addNewNote(withNoteContent: noteContent,dueDate: dueDate,remindAt: remindAt)
+                            // create a local nofication with remind At
+                            noteContent = ""
+                            dismissKeyboardAndTapGesture()
+                        } else {
+                            showPopUpChangeText.toggle()
+                        }
+                    } label: {
+                        if (keyboardFocused) {
+                            Text("Done")
+                        } else {
 //                            Image(systemName: "ellipsis")
-//                        }
-//                    }
-//                }
-//            }
+                        }
+                    }
+                }
+            }
             if(notes.count == 0){
                 Text("No \(selectedFilter.description.lowercased()) task")
                     .foregroundStyle(.secondary)
