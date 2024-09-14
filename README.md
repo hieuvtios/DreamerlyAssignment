@@ -2,8 +2,6 @@
  
 Task-Management App
 
-Working hours: ~ 14 hours
-
 Features:
 - Allow users to create, read, update, and delete tasks. ( Store database in Core Data)
 - Implement task categorization lists (work, personal, etc.). ( User can add list with customize background color, tag color...)
