@@ -34,8 +34,8 @@ Designing a task management app involves making several decisions about the app'
 
 3. Core Features
 - Task Creation: This should be quick and intuitive, possibly integrating natural language processing for due dates (e.g., "Remind me tomorrow at 2 PM"). A minimalistic interface with the option to add additional details (tags, due dates, attachments) as needed can help reduce cognitive load.
-- Deadlines and Reminders: Adding deadlines, notifications, and reminders ensures users are prompted when a task is due. Recurring tasks can further help manage routines.
-- Task Filtering and Sorting: Users should be able to filter tasks by due date, priority, project, or completion status. Sorting by due date or priority ensures the most relevant tasks appear first.
+- Deadlines and Reminders: Adding deadlines, notifications, and reminders ensures users are prompted when a task is due.
+- Task Filtering and Sorting: Users should be able to filter tasks by completion status.
 - Task Completion and Progress: User can see the progress in dashboard (finished, doing tasks)
 
 4. Data Persistence
