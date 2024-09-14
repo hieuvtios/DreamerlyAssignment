@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Note" representedClassName="Note" syncable="YES">
+        <attribute name="duedate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="listid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="noteid" optional="YES" attributeType="String"/>
+        <attribute name="notename" optional="YES" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reminddate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="tasks" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tasks" inverseName="notes" inverseEntity="Tasks"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint/>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Tasks" representedClassName="Tasks" syncable="YES">
+        <attribute name="listid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="tag" optional="YES" attributeType="String"/>
+        <attribute name="taskListName" optional="YES" attributeType="String"/>
+        <attribute name="themecolor" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="notes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" inverseName="tasks" inverseEntity="Note"/>
+    </entity>
+</model>
