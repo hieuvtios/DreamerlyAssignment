@@ -53,3 +53,9 @@ Haptic Feedback: Subtle vibrations when completing a task, creating a satisfying
 
 These design choices aim to balance functionality with user experience, ensuring the app is not only useful but also pleasant and easy to use.
   
+Feature improvements:
+- Filter lists & tasks by color
+- Add File to Note
+- Share list & note
+- Filter by tags
+- Sub task 
