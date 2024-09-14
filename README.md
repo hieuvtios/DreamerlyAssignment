@@ -58,4 +58,3 @@ Feature improvements:
 - Add File to Note
 - Share list & note
 - Filter by tags
-- Sub task 
